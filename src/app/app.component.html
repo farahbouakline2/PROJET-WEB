@@ -1,0 +1,17 @@
+<section>
+   
+
+  <h1 ><img [src]="myimage1" url="" class="image2" /> Espace Admin  
+
+ 
+    <h2 class="gauche">{{myDate | date:'yyyy-MM-dd'}} <a routerLink="" routerLinkActive="active" > <img [src]="myimage2" url="" class="image" /></a></h2> 
+    </h1>
+ 
+    <section class="sessionlist">
+      <router-outlet></router-outlet>
+     </section>
+<header >
+  <app-menu></app-menu>
+  
+ </header>
+</section>

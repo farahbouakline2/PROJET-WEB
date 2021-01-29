@@ -1,0 +1,50 @@
+<section>
+    <router-outlet></router-outlet>
+   </section>
+  <header>
+    <h2>Ajouter un  formateur</h2>
+  </header>
+  <form #sessionItemForm="ngForm"
+  (ngSubmit)="addSession(sessionItemForm.value)">
+    <ul>
+      <i>
+        <label for="name">Nom</label>
+        <input type="text" name="name" id="name" ngModel  required >
+        </i>
+      <i>
+        <label for="prenom">prénom</label>
+        <input type="text" name="prenom" id="prenom" ngModel required>
+        
+        
+      </i>
+      <i>
+        <label for="adresse">Location</label>
+        <input type="text" name="adresse" id="adresse" ngModel  required>
+        </i>
+        <i>
+          <label for="email">e-mail</label>
+          <input type="text" name="email" id="email" ngModel required>
+          
+          
+        </i>
+      <li>
+        <label for="domaine">Domaine d'expertise</label>
+        <select name="domaine" id="domaine" ngModel >
+          <option value="MEAN">MEAN Stack</option>
+  <option value="Angular">Angular</option>
+  <option value="NodeJS">NodeJS</option>
+  <option value="Symphony">Symphony</option>
+  <option value="Laravel">Laravel</option>
+  <option value="Ionic">Ionic</option>
+  <option value="Android">Android</option>
+  <option value="Xamarin">Xamarin</option>
+  <option value="Swift">Swift</option>
+        
+        </select>
+      </li>
+   
+    </ul>
+    <button type="submit"[disabled]="!sessionItemForm.form.valid">Enregistrer</button>
+   
+  </form>
+  

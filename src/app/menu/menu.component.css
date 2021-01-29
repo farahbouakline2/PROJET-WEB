@@ -1,0 +1,25 @@
+.tableau{
+    padding-top: 25px;
+  padding-bottom: 14rem;
+    
+        background-color: #02085c;
+        
+   
+}
+.image{
+    width: 33px;
+    height: 33px;
+    background-color: #02085c;
+}
+textarea{
+   
+    width: 100px;
+    height: 20px;
+    resize: none;
+}
+.menu{
+    padding-top: 10px;
+    padding-inline-start: 6px;
+    vertical-align: middle;
+   
+}

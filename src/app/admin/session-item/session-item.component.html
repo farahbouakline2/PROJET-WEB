@@ -1,0 +1,14 @@
+<h2>{{session.name}}</h2>
+<div>{{session.track}}</div>
+<div>Prévue le {{session.date | date}}  pendant {{session.duree}} jours à {{session.local}}</div>
+<li *ngIf="session.participants < 20">Encore {{20 - session.participants}} places sont disponibles!</li>
+<li *ngIf="session.participants >= 20"> session complete</li>
+<div>{{session.participants}} Participants</div>
+<div class="tools">
+  <a class="delete">
+    Suppression
+  </a>
+  <a class="inscrire">
+    Modification
+  </a>
+</div>

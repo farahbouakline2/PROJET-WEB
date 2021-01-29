@@ -1,0 +1,81 @@
+section {
+    display:flex;
+    justify-content:center; 
+ }
+ h5
+ {
+     text-align: right;
+ }
+ div 
+ {
+ width:270px;
+ height:200px;
+ margin:4px;
+ display:inline-block;
+ }
+ .sess
+ {
+     
+     background-color: tomato;
+     vertical-align: middle; }
+ img
+ { 
+     width:150px;
+ height:150px;
+ }
+ .part
+ {
+ background-color: rgb(9, 160, 97);
+ }
+ .forma
+ {
+     background-color: rgb(99, 12, 150);
+ }
+ .tableau-style
+ {
+ border-collapse:collapse;
+ min-width:400px;
+ width:110px;
+ height:300px;
+ box-shadow: 0 5px 50px rgba(42, 146, 206, 0.15);
+ cursor :pointer;
+ }
+ .table2
+ {
+     border-collapse:collapse;
+     min-width:200px;
+     width:100px;
+     height:90px;
+     box-shadow: 0 5px 50px rgba(130, 193, 229, 0.15);
+     cursor :pointer;
+     
+ }
+ thead tr
+ {
+ background-color: rgb(23, 130, 201);
+ color:#fff;
+ text-align:center;
+ }
+ td,th
+ {
+     text-align:center;  
+ }
+ tbody,tr,td,th{
+     border :1px solid #ddd;
+ }
+ tbody tr:nth-child(even)
+ {
+     background-color: #f3f3f3;
+ }
+ 
+ .tableau-style,.table2
+ {
+     display:inline-table;
+     margin:100px;
+ }
+ section {
+     width: 100%;
+     background-color: #ffffff;
+     
+     }
+ 

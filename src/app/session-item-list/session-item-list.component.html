@@ -1,0 +1,20 @@
+<section>
+  <router-outlet></router-outlet>
+ </section>
+<header>
+
+  <h1>Liste des sessions de formation </h1>
+  
+</header>
+
+<section>
+  <div>
+    <tr align="left"><img [src]="myimage1" url=""  /> </tr>
+    <tr align="left"><a routerLink="/add" routerLinkActive="active" ><img [src]="myimage2" url=""  /></a> </tr>
+    <tr align="left"><a [routerLink]="['./edit', 1]" routerLinkActive="active" ><img [src]="myimage3" url=""/> </a> </tr>
+    </div>
+  <app-session-item *ngFor="let sessionItem of sessionItems" [session]="sessionItem"
+                    [ngClass]="{'session-web': sessionItem.name === 'Formation Web', 'session-mobile': sessionItem.name === 'Formation Mobile'}">
+  </app-session-item>
+ 
+</section>

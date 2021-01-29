@@ -1,0 +1,16 @@
+<section>
+    <router-outlet></router-outlet>
+   </section>
+   <section>
+   <img src="assets/image/image13.png"/>
+   <a routerLink="/add-formateur" routerLinkActive="active" > <img src="assets/image/image14.png"/></a>
+  
+   <table class="t2" >
+    <thead>
+     <tr>
+     <th>liste de Formateurs</th>
+   </tr>
+   </thead>
+   </table>
+  <app-formateurs *ngFor="let sessionItem of sessionItems" [sessionformateur]="sessionItem"></app-formateurs>
+  </section>

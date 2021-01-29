@@ -1,0 +1,21 @@
+
+
+ <table class="t2" >
+  
+    <tbody>
+      <tr>
+   <div class="text">
+    <h4>{{sessionparticipant.name}} {{sessionparticipant.prenom}}
+     {{sessionparticipant.adresse}}{{sessionparticipant.email}}
+    </h4>
+   </div>
+    <div class="image">
+    <a routerLink="/edit-participant" routerLinkActive="active"> <img align=right src="assets/image/image15.png"/></a>
+    <img align=right src="assets/image/image16.png" (click)="onDelete()"/>
+   </div>
+   
+      </tr>
+      
+     
+    </tbody>
+    </table>
